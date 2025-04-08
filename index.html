@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Travely | Travel Booking HTML Landing Page Template</title>
+		<link rel="icon" type="image/x-icon" href="img/favicon.png">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/all.min.css">
+		<link rel="stylesheet" href="css/themify-icons.css">
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="css/nice-select.css">
+		<link rel="stylesheet" href="css/meanmenu.min.css">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/custom-animate.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>	
+	
+	<body>	
+		<!-- start preloader -->
+		 <div id="preloader">
+			<div class="loader"></div>
+		</div>
+		<!-- end preloader -->
+
+		<div id="header" class="nav_section">
+			<div class="container">
+				<!-- Navbar -->
+				<nav class="navbar">
+					<div class="logo">
+						<a href="index.html">
+							<img src="img/logo.png" alt="">
+						</a>
+					</div>
+
+					<ul class="nav-links ms-auto">
+						<li><a class="nav_active" href="#hero_section">Home</a></li>
+						<li><a class="nav_active" href="#about">About</a></li>
+						<li><a class="nav_active" href="#package">Package</a></li>
+						<li><a class="nav_active" href="#service">Service</a></li>
+						<li><a class="nav_active" href="#team">Team</a></li>
+						<li><a class="nav_active" href="#contact">Contact</a></li>
+					</ul>
+
+					<button class="btn">Buy Now</button>
+
+					<div class="menu-icon" onclick="toggleMenu()">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<!-- navbar end -->
+		
+		<!-- start hero section -->
+		<section id="hero_section" class="hero_section section_padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="hero_left_section">
+							<h1>Experience Something<span class="fw-normal"> New Every </span><span class="highlight">Moment</span></h1>	
+							<p class="text-muted">
+								It is a long established fact that a reader will be distracted by the readable content of a page when its layout.
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-6 text-end text-anim-right">
+						<img src="img/banner.png" alt="Traveler with backpack and binoculars">
+					</div>
+				</div>
+				
+				
+				<form class="searchForm">
+					<div class="booking-list-area-1">
+						<div class="booking-list">
+							<div class="content">
+								<div class="tour_destination">
+									<div class="content">
+										<div class="content_tour_svg">
+											<svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22" fill="none">
+											  <path d="M8.77778 21C12.6667 17 16.5556 13.4182 16.5556 9C16.5556 4.58172 13.0733 1 8.77778 1C4.48223 1 1 4.58172 1 9C1 13.4182 4.88889 17 8.77778 21Z" stroke="#293845" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+											  <path d="M8.77767 12.1111C10.6187 12.1111 12.111 10.6188 12.111 8.77779C12.111 6.93685 10.6187 5.44446 8.77767 5.44446C6.93667 5.44446 5.44434 6.93685 5.44434 8.77779C5.44434 10.6188 6.93667 12.1111 8.77767 12.1111Z" stroke="#293845" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg> Destination
+										</div>
+										<div class="form-clt">
+											<select id="myselect" class="single-select w-100">
+												<option>Your city or Region</option>
+												<option>Australia</option>
+												<option>India</option>
+												<option>Italy</option>
+												<option>Japan</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="booking-list">
+							<div class="content">
+								<div class="tour_destination">
+									<div class="content">
+										<div class="content_tour_svg">
+											<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+											  <path d="M21.5892 25L21.0176 24.9966C13.1699 24.9489 0.0011953 24.4444 0.0011953 21.588C0.0011953 20.3495 1.99638 19.9791 4.7585 19.4678C6.114 19.2178 8.93634 18.6929 9.092 18.1748C8.9602 17.7567 6.68665 17.1647 3.95293 17.042L3.40982 17.0193V15.9069L4.54603 15.9365C6.88662 16.0819 10.2271 16.5727 10.2271 18.1793C10.2271 19.6098 7.78877 20.0609 4.96416 20.5847C3.62343 20.8335 1.38169 21.2482 1.1215 21.6527C1.47259 22.7549 10.5793 23.7968 21.0222 23.8604H21.5892V25ZM9.09087 4.69595C9.09087 7.28537 6.60711 10.794 4.54603 14.7707C2.48495 10.794 0.0011953 7.28651 0.0011953 4.69481C-0.0126761 4.08708 0.0943039 3.48264 0.315926 2.91658C0.537548 2.35052 0.869397 1.83412 1.29221 1.39736C1.71502 0.96059 2.22038 0.612155 2.77895 0.372279C3.33751 0.132402 3.93816 0.00586048 4.54603 0C5.1539 0.00586048 5.75455 0.132402 6.31311 0.372279C6.87168 0.612155 7.37704 0.96059 7.79985 1.39736C8.22266 1.83412 8.55451 2.35052 8.77614 2.91658C8.99776 3.48264 9.10474 4.08821 9.09087 4.69595ZM5.18799 11.2314C6.61052 8.70336 7.95466 6.31959 7.95466 4.69481C7.96935 4.2361 7.89234 3.77907 7.72812 3.35051C7.5639 2.92195 7.31579 2.53049 6.99833 2.19905C6.68086 1.86762 6.30043 1.60289 5.87934 1.42039C5.45824 1.23788 5.00495 1.14127 4.54603 1.13621C4.08711 1.14127 3.63382 1.23788 3.21272 1.42039C2.79163 1.60289 2.4112 1.86762 2.09373 2.19905C1.77627 2.53049 1.52816 2.92195 1.36394 3.35051C1.19973 3.77907 1.12271 4.2361 1.1374 4.69481C1.1374 6.31959 2.48154 8.70563 3.90407 11.2314C4.11541 11.6086 4.33129 11.9904 4.54603 12.379C4.76191 11.9904 4.97665 11.6086 5.18799 11.2314ZM6.81845 4.54483C6.81845 4.99428 6.68517 5.43362 6.43548 5.80732C6.18578 6.18102 5.83088 6.47228 5.41565 6.64427C5.00042 6.81627 4.54351 6.86127 4.1027 6.77359C3.6619 6.68591 3.25699 6.46948 2.93919 6.15168C2.62139 5.83387 2.40496 5.42897 2.31728 4.98816C2.22959 4.54736 2.2746 4.09045 2.44659 3.67522C2.61858 3.25999 2.90985 2.90509 3.28354 2.65539C3.65724 2.40569 4.09659 2.27242 4.54603 2.27242C5.14871 2.27242 5.72671 2.51183 6.15287 2.93799C6.57903 3.36415 6.81845 3.94215 6.81845 4.54483ZM5.68224 4.54483C5.68224 4.32011 5.6156 4.10044 5.49075 3.91359C5.3659 3.72674 5.18845 3.58111 4.98084 3.49511C4.77322 3.40912 4.54477 3.38662 4.32437 3.43046C4.10396 3.4743 3.90151 3.58251 3.74261 3.74141C3.58371 3.90032 3.47549 4.10277 3.43165 4.32317C3.38781 4.54357 3.41031 4.77203 3.49631 4.97964C3.58231 5.18726 3.72794 5.36471 3.91479 5.48956C4.10163 5.61441 4.32131 5.68104 4.54603 5.68104C4.84737 5.68104 5.13637 5.56134 5.34945 5.34826C5.56253 5.13517 5.68224 4.84618 5.68224 4.54483ZM24.9978 12.6483C24.9978 15.24 22.514 18.7474 20.453 22.7242C18.3919 18.7474 15.9081 15.24 15.9081 12.6483C15.8889 12.0393 15.9922 11.4328 16.2119 10.8645C16.4316 10.2963 16.7633 9.77802 17.1872 9.34047C17.6112 8.90292 18.1187 8.55503 18.6797 8.31744C19.2407 8.07986 19.8437 7.95743 20.453 7.95743C21.0622 7.95743 21.6652 8.07986 22.2262 8.31744C22.7872 8.55503 23.2947 8.90292 23.7187 9.34047C24.1426 9.77802 24.4743 10.2963 24.694 10.8645C24.9137 11.4328 25.017 12.0393 24.9978 12.6483ZM21.0949 19.1849C22.5174 16.6568 23.8616 14.2731 23.8616 12.6483C23.8822 12.1878 23.8093 11.728 23.6473 11.2965C23.4853 10.865 23.2375 10.4708 22.9189 10.1377C22.6004 9.80453 22.2177 9.53941 21.7938 9.35828C21.37 9.17715 20.9139 9.08376 20.453 9.08376C19.992 9.08376 19.5359 9.17715 19.1121 9.35828C18.6882 9.53941 18.3055 9.80453 17.987 10.1377C17.6684 10.4708 17.4207 10.865 17.2586 11.2965C17.0966 11.728 17.0237 12.1878 17.0443 12.6483C17.0443 14.2731 18.3885 16.6591 19.811 19.1849C20.0223 19.5621 20.2382 19.9439 20.453 20.3325C20.6688 19.9439 20.8836 19.5621 21.0949 19.1849ZM22.7254 12.4983C22.7254 12.9477 22.5921 13.3871 22.3424 13.7608C22.0927 14.1345 21.7378 14.4257 21.3226 14.5977C20.9073 14.7697 20.4504 14.8147 20.0096 14.727C19.5688 14.6394 19.1639 14.4229 18.8461 14.1051C18.5283 13.7873 18.3119 13.3824 18.2242 12.9416C18.1365 12.5008 18.1815 12.0439 18.3535 11.6287C18.5255 11.2134 18.8168 10.8585 19.1905 10.6088C19.5642 10.3592 20.0035 10.2259 20.453 10.2259C21.0556 10.2259 21.6336 10.4653 22.0598 10.8915C22.486 11.3176 22.7254 11.8956 22.7254 12.4983ZM21.5892 12.4983C21.5892 12.2736 21.5225 12.0539 21.3977 11.8671C21.2728 11.6802 21.0954 11.5346 20.8878 11.4486C20.6801 11.3626 20.4517 11.3401 20.2313 11.3839C20.0109 11.4278 19.8084 11.536 19.6495 11.6949C19.4906 11.8538 19.3824 12.0562 19.3386 12.2766C19.2947 12.497 19.3172 12.7255 19.4032 12.9331C19.4892 13.1407 19.6349 13.3182 19.8217 13.443C20.0086 13.5679 20.2282 13.6345 20.453 13.6345C20.7543 13.6345 21.0433 13.5148 21.2564 13.3017C21.4695 13.0886 21.5892 12.7996 21.5892 12.4983Z" fill="#293845"/>
+											</svg> Tour type
+										</div>
+										<div class="form-clt">
+											<select id="myselect2" class="single-select w-100">
+												<option>Your city or Region</option>
+												<option>Australia</option>
+												<option>India</option>
+												<option>Italy</option>
+												<option>Japan</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="booking-list">
+							<div class="content">
+								<div class="tour_destination">
+									<div class="content">
+										<div class="content_tour_svg">
+											<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+											  <path d="M11 21C16.5229 21 21 16.5229 21 11C21 5.47716 16.5229 1 11 1C5.47716 1 1 5.47716 1 11C1 16.5229 5.47716 21 11 21Z" stroke="#293845" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+											  <path d="M11 4.33331V11" stroke="#293845" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+											  <path d="M15.7111 15.7111L11 11" stroke="#293845" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg> Date form
+										</div>
+										<div class="form-clt">
+											<div id="datepicker" class="input-group date">
+												<div class="input-group date">
+												  <input type="date" class="form-control">
+												  <span class="icon_calen"><i class="fas fa-calendar-alt"></i></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="booking-list">
+							<div class="content">
+								<div class="tour_destination">
+									<div class="content">
+										<div class="content_tour_svg">
+											<svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
+											  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.68028 5.78867C3.68048 4.79061 3.93868 3.80956 4.42982 2.94071C4.92096 2.07186 5.62835 1.34473 6.48335 0.829866C7.33835 0.315005 8.31193 0.0299025 9.3096 0.00222686C10.3073 -0.0254488 11.2952 0.205242 12.1774 0.671912C13.0596 1.13858 13.8062 1.82538 14.3448 2.66567C14.8833 3.50595 15.1955 4.47118 15.251 5.46769C15.3066 6.4642 15.1036 7.45814 14.6617 8.35306C14.2199 9.24799 13.5542 10.0135 12.7293 10.5753C14.5058 11.2269 16.0466 12.3951 17.1535 13.9298C18.2603 15.4644 18.8826 17.2951 18.9403 19.1864C18.9434 19.2901 18.926 19.3934 18.8892 19.4904C18.8524 19.5874 18.7969 19.6761 18.7258 19.7516C18.5822 19.9042 18.3838 19.9934 18.1744 19.9996C17.965 20.0059 17.7617 19.9288 17.6092 19.7851C17.4567 19.6415 17.3675 19.4432 17.3612 19.2338C17.2985 17.1826 16.4396 15.2363 14.9665 13.8075C13.4934 12.3788 11.5218 11.5797 9.46962 11.5797C7.41743 11.5797 5.44587 12.3788 3.97275 13.8075C2.49963 15.2363 1.64071 17.1826 1.57803 19.2338C1.56749 19.44 1.47663 19.6338 1.32491 19.7738C1.1732 19.9137 0.972698 19.9887 0.766363 19.9827C0.560028 19.9766 0.364271 19.89 0.221029 19.7414C0.0777865 19.5927 -0.00154737 19.3939 2.28729e-05 19.1875C0.0574493 17.296 0.679656 15.465 1.78655 13.9302C2.89345 12.3954 4.43437 11.2269 6.21098 10.5753C5.43061 10.0445 4.79201 9.33078 4.35089 8.49643C3.90977 7.66208 3.67953 6.73245 3.68028 5.78867ZM9.47015 1.57785C8.35337 1.57785 7.28233 2.02149 6.49265 2.81117C5.70297 3.60085 5.25933 4.67189 5.25933 5.78867C5.25933 6.90544 5.70297 7.97648 6.49265 8.76616C7.28233 9.55584 8.35337 9.99948 9.47015 9.99948C10.5869 9.99948 11.658 9.55584 12.4476 8.76616C13.2373 7.97648 13.681 6.90544 13.681 5.78867C13.681 4.67189 13.2373 3.60085 12.4476 2.81117C11.658 2.02149 10.5869 1.57785 9.47015 1.57785Z" fill="#293845"/>
+											</svg> Guests
+										</div>
+										<div class="form-clt">
+											<div class="form">
+												<select id="myselect3" class="single-select w-100">
+													<option>Your city or Region</option>
+													<option>Australia</option>
+													<option>India</option>
+													<option>Italy</option>
+													<option>Japan</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					   <button type="submit" class="btn search_btn">Search Plan</button>
+					</div>
+                </form>
+			</div>
+		</section>
+		<!-- end hero section -->
+		
+		<!-- start travel agency section -->
+		<section id="about" class="travel_agency section_padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-12">
+						<div class="travel_agency_left text-anim-right">
+							<img src="img/travelagency.png" alt="Travel Destination">
+						</div>
+					</div>
+					
+					<div class="col-lg-6 col-md-12">
+						<div class="travel_agency_right">
+							<div class="sub_heading">
+								<span>About Company</span>
+							</div>	
+								
+							<h2 class="section_title">We are leading Travel Agency</h2>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+							<ul class="agency_list_item">
+								<li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+									  <path d="M9.79306 13.9763L9.79308 13.9763L9.79601 13.9734L15.577 8.25283H15.5911L15.7386 8.09972C16.0016 7.82679 16.1474 7.46189 16.145 7.08292C16.1427 6.70394 15.9923 6.34089 15.726 6.07126C15.4597 5.80162 15.0985 5.64675 14.7196 5.6397C14.3407 5.63265 13.974 5.77397 13.6978 6.03351L13.6977 6.03339L13.6889 6.04215L8.75818 10.9128L6.2901 8.54472C6.29005 8.54468 6.29 8.54463 6.28995 8.54459C6.0118 8.27757 5.63897 8.13196 5.25347 8.13979C4.8679 8.14761 4.50123 8.30829 4.23412 8.58646C3.96702 8.86463 3.82136 9.23752 3.82919 9.62309C3.83701 10.0087 3.99769 10.3753 4.27586 10.6424L4.27684 10.6434L7.76872 13.9782C8.03971 14.2409 8.40238 14.3879 8.77993 14.3879C9.15837 14.3879 9.52187 14.2402 9.79306 13.9763ZM4.18774 2.48323C5.61474 1.37933 7.32653 0.704518 9.12293 0.537709C10.5116 0.413804 11.9106 0.596115 13.2212 1.07179C14.5321 1.54756 15.7226 2.30521 16.7086 3.29129C17.6947 4.27737 18.4524 5.46785 18.9282 6.77871C19.4039 8.0894 19.5862 9.48851 19.4622 10.8773C19.2953 12.6736 18.6205 14.3853 17.5167 15.8122C16.4126 17.2394 14.925 18.3228 13.2278 18.9355C11.5305 19.5482 9.69394 19.6649 7.93279 19.2721C6.17165 18.8792 4.55879 17.993 3.28286 16.7171C2.00694 15.4412 1.12072 13.8283 0.727864 12.0671C0.335009 10.306 0.451765 8.4694 1.06447 6.77219C1.67718 5.07497 2.76051 3.58731 4.18774 2.48323Z" fill="#FF9D43" stroke="#FF9D43"/>
+									</svg>The majority have suffered alteration in some form</li>
+								<li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+									  <path d="M9.79306 13.9763L9.79308 13.9763L9.79601 13.9734L15.577 8.25283H15.5911L15.7386 8.09972C16.0016 7.82679 16.1474 7.46189 16.145 7.08292C16.1427 6.70394 15.9923 6.34089 15.726 6.07126C15.4597 5.80162 15.0985 5.64675 14.7196 5.6397C14.3407 5.63265 13.974 5.77397 13.6978 6.03351L13.6977 6.03339L13.6889 6.04215L8.75818 10.9128L6.2901 8.54472C6.29005 8.54468 6.29 8.54463 6.28995 8.54459C6.0118 8.27757 5.63897 8.13196 5.25347 8.13979C4.8679 8.14761 4.50123 8.30829 4.23412 8.58646C3.96702 8.86463 3.82136 9.23752 3.82919 9.62309C3.83701 10.0087 3.99769 10.3753 4.27586 10.6424L4.27684 10.6434L7.76872 13.9782C8.03971 14.2409 8.40238 14.3879 8.77993 14.3879C9.15837 14.3879 9.52187 14.2402 9.79306 13.9763ZM4.18774 2.48323C5.61474 1.37933 7.32653 0.704518 9.12293 0.537709C10.5116 0.413804 11.9106 0.596115 13.2212 1.07179C14.5321 1.54756 15.7226 2.30521 16.7086 3.29129C17.6947 4.27737 18.4524 5.46785 18.9282 6.77871C19.4039 8.0894 19.5862 9.48851 19.4622 10.8773C19.2953 12.6736 18.6205 14.3853 17.5167 15.8122C16.4126 17.2394 14.925 18.3228 13.2278 18.9355C11.5305 19.5482 9.69394 19.6649 7.93279 19.2721C6.17165 18.8792 4.55879 17.993 3.28286 16.7171C2.00694 15.4412 1.12072 13.8283 0.727864 12.0671C0.335009 10.306 0.451765 8.4694 1.06447 6.77219C1.67718 5.07497 2.76051 3.58731 4.18774 2.48323Z" fill="#FF9D43" stroke="#FF9D43"/>
+									</svg>It is a long established that a reader will be distracted</li>
+								<li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+									  <path d="M9.79306 13.9763L9.79308 13.9763L9.79601 13.9734L15.577 8.25283H15.5911L15.7386 8.09972C16.0016 7.82679 16.1474 7.46189 16.145 7.08292C16.1427 6.70394 15.9923 6.34089 15.726 6.07126C15.4597 5.80162 15.0985 5.64675 14.7196 5.6397C14.3407 5.63265 13.974 5.77397 13.6978 6.03351L13.6977 6.03339L13.6889 6.04215L8.75818 10.9128L6.2901 8.54472C6.29005 8.54468 6.29 8.54463 6.28995 8.54459C6.0118 8.27757 5.63897 8.13196 5.25347 8.13979C4.8679 8.14761 4.50123 8.30829 4.23412 8.58646C3.96702 8.86463 3.82136 9.23752 3.82919 9.62309C3.83701 10.0087 3.99769 10.3753 4.27586 10.6424L4.27684 10.6434L7.76872 13.9782C8.03971 14.2409 8.40238 14.3879 8.77993 14.3879C9.15837 14.3879 9.52187 14.2402 9.79306 13.9763ZM4.18774 2.48323C5.61474 1.37933 7.32653 0.704518 9.12293 0.537709C10.5116 0.413804 11.9106 0.596115 13.2212 1.07179C14.5321 1.54756 15.7226 2.30521 16.7086 3.29129C17.6947 4.27737 18.4524 5.46785 18.9282 6.77871C19.4039 8.0894 19.5862 9.48851 19.4622 10.8773C19.2953 12.6736 18.6205 14.3853 17.5167 15.8122C16.4126 17.2394 14.925 18.3228 13.2278 18.9355C11.5305 19.5482 9.69394 19.6649 7.93279 19.2721C6.17165 18.8792 4.55879 17.993 3.28286 16.7171C2.00694 15.4412 1.12072 13.8283 0.727864 12.0671C0.335009 10.306 0.451765 8.4694 1.06447 6.77219C1.67718 5.07497 2.76051 3.58731 4.18774 2.48323Z" fill="#FF9D43" stroke="#FF9D43"/>
+									</svg>There are many variations of passages of Lorem</li>
+								<li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+									  <path d="M9.79306 13.9763L9.79308 13.9763L9.79601 13.9734L15.577 8.25283H15.5911L15.7386 8.09972C16.0016 7.82679 16.1474 7.46189 16.145 7.08292C16.1427 6.70394 15.9923 6.34089 15.726 6.07126C15.4597 5.80162 15.0985 5.64675 14.7196 5.6397C14.3407 5.63265 13.974 5.77397 13.6978 6.03351L13.6977 6.03339L13.6889 6.04215L8.75818 10.9128L6.2901 8.54472C6.29005 8.54468 6.29 8.54463 6.28995 8.54459C6.0118 8.27757 5.63897 8.13196 5.25347 8.13979C4.8679 8.14761 4.50123 8.30829 4.23412 8.58646C3.96702 8.86463 3.82136 9.23752 3.82919 9.62309C3.83701 10.0087 3.99769 10.3753 4.27586 10.6424L4.27684 10.6434L7.76872 13.9782C8.03971 14.2409 8.40238 14.3879 8.77993 14.3879C9.15837 14.3879 9.52187 14.2402 9.79306 13.9763ZM4.18774 2.48323C5.61474 1.37933 7.32653 0.704518 9.12293 0.537709C10.5116 0.413804 11.9106 0.596115 13.2212 1.07179C14.5321 1.54756 15.7226 2.30521 16.7086 3.29129C17.6947 4.27737 18.4524 5.46785 18.9282 6.77871C19.4039 8.0894 19.5862 9.48851 19.4622 10.8773C19.2953 12.6736 18.6205 14.3853 17.5167 15.8122C16.4126 17.2394 14.925 18.3228 13.2278 18.9355C11.5305 19.5482 9.69394 19.6649 7.93279 19.2721C6.17165 18.8792 4.55879 17.993 3.28286 16.7171C2.00694 15.4412 1.12072 13.8283 0.727864 12.0671C0.335009 10.306 0.451765 8.4694 1.06447 6.77219C1.67718 5.07497 2.76051 3.58731 4.18774 2.48323Z" fill="#FF9D43" stroke="#FF9D43"/>
+									</svg>Contrary to popular belief, Lorem Ipsum is not simply.</li>
+							</ul>
+							<a class="more_detail" href="#">More Details 
+								<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+									<rect class="svg-bg" x="0.499939" y="0.5" width="49" height="49" rx="24.5" fill="#FF9D43" stroke="#FF9D43"/>
+									<path class="svg-arrow" d="M30.9999 19.5145V28.4327C30.9999 28.5691 30.9458 28.7 30.8493 28.7965C30.7527 28.8929 30.6219 28.9472 30.4855 28.9472C30.3491 28.9472 30.2182 28.8929 30.1216 28.7965C30.0251 28.7 29.971 28.5691 29.971 28.4327V20.7579L19.8694 30.8508C19.7739 30.9463 19.6444 31 19.5093 31C19.3742 31 19.2446 30.9463 19.1491 30.8508C19.0536 30.7554 18.9999 30.6258 18.9999 30.4907C18.9999 30.3556 19.0536 30.2261 19.1491 30.1306L29.242 20.029H21.5673C21.4309 20.029 21.3 19.9748 21.2035 19.8783C21.107 19.7818 21.0528 19.651 21.0528 19.5145C21.0528 19.3781 21.107 19.2472 21.2035 19.1507C21.3 19.0542 21.4309 19 21.5673 19H30.4855C30.6219 19 30.7527 19.0542 30.8493 19.1507C30.9458 19.2472 30.9999 19.3781 30.9999 19.5145Z" fill="white"/>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end travel agency section -->
+		
+		<!-- start facilities section -->
+		<section id="package" class="facilities_section section_padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-10 offset-lg-1 col-md-12 col-sm-12">
+						<div class="facilities_title_section">
+							<div class="section_title_area">
+								<div class="sub_heading">
+									<span>Featured Places</span>
+								</div>
+								<h2 class="section_title facilities_section_title">Amazing Tour Places</h2>
+							</div>	
+						</div>
+						
+						<div class="slider_button">
+						  <a id="prevButton"><i class="fa-solid fa-arrow-left-long"></i></a>
+						  <a id="nextButton"><i class="fa-solid fa-arrow-right-long"></i></a>
+						</div>
+
+						<!-- Room Cards Section -->
+						<div class="owl-carousel owl-theme">
+							<div class="room-card">
+								<div class="room-image">
+									<img src="img/package/1.jpg" alt="Deluxe Family Room">
+									<div class="price_tag">$300 | 3 Days</div>
+								</div>
+								<div class="room_details">
+									<div class="icons">
+										<span>
+											<svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
+											  <path d="M1 4.33333H10M1 4.33333V9.22233C1 9.84461 1 10.1556 1.12262 10.3933C1.23048 10.6023 1.40245 10.7725 1.61414 10.879C1.85455 11 2.16943 11 2.79826 11H8.20174C8.83056 11 9.14499 11 9.38541 10.879C9.59709 10.7725 9.76964 10.6023 9.8775 10.3933C10 10.1558 10 9.84527 10 9.22421V4.33333M1 4.33333V3.889C1 3.26672 1 2.95534 1.12262 2.71767C1.23048 2.5086 1.40245 2.33874 1.61414 2.23222C1.85479 2.11111 2.17005 2.11111 2.80011 2.11111H3.25M10 4.33333V3.88717C10 3.26611 10 2.95511 9.8775 2.71767C9.76964 2.5086 9.59709 2.33874 9.38541 2.23222C9.14476 2.11111 8.83017 2.11111 8.20011 2.11111H7.75M7.75 1V2.11111M7.75 2.11111H3.25M3.25 1V2.11111" stroke="#FF9D43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg> 200 m
+										</span>
+										<span>
+											<svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewBox="0 0 10 12" fill="none">
+											  <path d="M9 11C9 8.85223 7.20914 7.11111 5 7.11111C2.79086 7.11111 1 8.85223 1 11M5 5.44444C3.73764 5.44444 2.71429 4.44952 2.71429 3.22222C2.71429 1.99492 3.73764 1 5 1C6.26237 1 7.28571 1.99492 7.28571 3.22222C7.28571 4.44952 6.26237 5.44444 5 5.44444Z" stroke="#FF9D43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg> 5 Guests
+										</span>
+										
+										<div class="stars">
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-regular fa-star"></i>
+											<i class="fa-regular fa-star"></i>
+										</div>
+									</div>
+									<a href="#0"><h3>Mountains in Lake, Canada</h3></a>
+									<p>Contrary to popular belief, Lorem Ipsum is not simply...</p>
+									
+									<div class="facilities_btn_area">
+										<a href="#" class="btn facilities_btn">Booking Now 
+											<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 12 12" fill="none">
+											  <path d="M12 0.514515V9.43267C12 9.56914 11.9459 9.7 11.8494 9.79647C11.7528 9.89294 11.6219 9.94721 11.4856 9.94721C11.3491 9.94721 11.2183 9.89294 11.1217 9.79647C11.0252 9.7 10.971 9.56914 10.971 9.43267V1.75791L0.869497 11.8508C0.77398 11.9463 0.644425 12 0.509332 12C0.374252 12 0.244696 11.9463 0.149179 11.8508C0.0536616 11.7554 0 11.6258 0 11.4907C0 11.3556 0.0536616 11.2261 0.149179 11.1306L10.2421 1.02903H2.56737C2.43092 1.02903 2.30005 0.974819 2.20356 0.878326C2.10707 0.781834 2.05286 0.650973 2.05286 0.514515C2.05286 0.378056 2.10707 0.247196 2.20356 0.150703C2.30005 0.0542101 2.43092 1.21958e-05 2.56737 0H11.4856C11.6219 1.21958e-05 11.7528 0.0542101 11.8494 0.150703C11.9459 0.247196 12 0.378056 12 0.514515Z" fill="white"/>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<!-- Add more room cards as needed -->
+							<div class="room-card">
+								<div class="room-image">
+									<img src="img/package/2.jpg" alt="Deluxe Family Room">
+									<div class="price_tag">$4500 | 4 Days</div>
+								</div>
+								<div class="room_details">
+									<div class="icons">
+										<span>
+											<svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
+											  <path d="M1 4.33333H10M1 4.33333V9.22233C1 9.84461 1 10.1556 1.12262 10.3933C1.23048 10.6023 1.40245 10.7725 1.61414 10.879C1.85455 11 2.16943 11 2.79826 11H8.20174C8.83056 11 9.14499 11 9.38541 10.879C9.59709 10.7725 9.76964 10.6023 9.8775 10.3933C10 10.1558 10 9.84527 10 9.22421V4.33333M1 4.33333V3.889C1 3.26672 1 2.95534 1.12262 2.71767C1.23048 2.5086 1.40245 2.33874 1.61414 2.23222C1.85479 2.11111 2.17005 2.11111 2.80011 2.11111H3.25M10 4.33333V3.88717C10 3.26611 10 2.95511 9.8775 2.71767C9.76964 2.5086 9.59709 2.33874 9.38541 2.23222C9.14476 2.11111 8.83017 2.11111 8.20011 2.11111H7.75M7.75 1V2.11111M7.75 2.11111H3.25M3.25 1V2.11111" stroke="#FF9D43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg> 200 m
+										</span>
+										<span>
+											<svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewBox="0 0 10 12" fill="none">
+											  <path d="M9 11C9 8.85223 7.20914 7.11111 5 7.11111C2.79086 7.11111 1 8.85223 1 11M5 5.44444C3.73764 5.44444 2.71429 4.44952 2.71429 3.22222C2.71429 1.99492 3.73764 1 5 1C6.26237 1 7.28571 1.99492 7.28571 3.22222C7.28571 4.44952 6.26237 5.44444 5 5.44444Z" stroke="#FF9D43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg> 5 Guests
+										</span>
+										
+										<div class="stars">
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-regular fa-star"></i>
+											<i class="fa-regular fa-star"></i>
+										</div>
+									</div>
+									<a href="#0"><h3>Doubble Suite Rooms</h3></a>
+									<p>Contrary to popular belief, Lorem Ipsum is not simply...</p>
+									
+									<div class="facilities_btn_area">
+										<a href="#" class="btn facilities_btn">Booking Now 
+											<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 12 12" fill="none">
+											  <path d="M12 0.514515V9.43267C12 9.56914 11.9459 9.7 11.8494 9.79647C11.7528 9.89294 11.6219 9.94721 11.4856 9.94721C11.3491 9.94721 11.2183 9.89294 11.1217 9.79647C11.0252 9.7 10.971 9.56914 10.971 9.43267V1.75791L0.869497 11.8508C0.77398 11.9463 0.644425 12 0.509332 12C0.374252 12 0.244696 11.9463 0.149179 11.8508C0.0536616 11.7554 0 11.6258 0 11.4907C0 11.3556 0.0536616 11.2261 0.149179 11.1306L10.2421 1.02903H2.56737C2.43092 1.02903 2.30005 0.974819 2.20356 0.878326C2.10707 0.781834 2.05286 0.650973 2.05286 0.514515C2.05286 0.378056 2.10707 0.247196 2.20356 0.150703C2.30005 0.0542101 2.43092 1.21958e-05 2.56737 0H11.4856C11.6219 1.21958e-05 11.7528 0.0542101 11.8494 0.150703C11.9459 0.247196 12 0.378056 12 0.514515Z" fill="white"/>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							
+							<div class="room-card">
+								<div class="room-image">
+									<img src="img/package/3.jpg" alt="Deluxe Family Room">
+									<div class="price_tag">$700 | 7 Days</div>
+								</div>
+								<div class="room_details">
+									<div class="icons">
+										<span>
+											<svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
+											  <path d="M1 4.33333H10M1 4.33333V9.22233C1 9.84461 1 10.1556 1.12262 10.3933C1.23048 10.6023 1.40245 10.7725 1.61414 10.879C1.85455 11 2.16943 11 2.79826 11H8.20174C8.83056 11 9.14499 11 9.38541 10.879C9.59709 10.7725 9.76964 10.6023 9.8775 10.3933C10 10.1558 10 9.84527 10 9.22421V4.33333M1 4.33333V3.889C1 3.26672 1 2.95534 1.12262 2.71767C1.23048 2.5086 1.40245 2.33874 1.61414 2.23222C1.85479 2.11111 2.17005 2.11111 2.80011 2.11111H3.25M10 4.33333V3.88717C10 3.26611 10 2.95511 9.8775 2.71767C9.76964 2.5086 9.59709 2.33874 9.38541 2.23222C9.14476 2.11111 8.83017 2.11111 8.20011 2.11111H7.75M7.75 1V2.11111M7.75 2.11111H3.25M3.25 1V2.11111" stroke="#FF9D43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg> 200 m
+										</span>
+										<span>
+											<svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewBox="0 0 10 12" fill="none">
+											  <path d="M9 11C9 8.85223 7.20914 7.11111 5 7.11111C2.79086 7.11111 1 8.85223 1 11M5 5.44444C3.73764 5.44444 2.71429 4.44952 2.71429 3.22222C2.71429 1.99492 3.73764 1 5 1C6.26237 1 7.28571 1.99492 7.28571 3.22222C7.28571 4.44952 6.26237 5.44444 5 5.44444Z" stroke="#FF9D43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg> 5 Guests
+										</span>
+										
+										<div class="stars">
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-regular fa-star"></i>
+											<i class="fa-regular fa-star"></i>
+										</div>
+									</div>
+									<a href="#0"><h3>Suprior Bed Rooms</h3></a>
+									<p>Contrary to popular belief, Lorem Ipsum is not simply...</p>
+									
+									<div class="facilities_btn_area">
+										<a href="#" class="btn facilities_btn">Booking Now 
+											<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 12 12" fill="none">
+											  <path d="M12 0.514515V9.43267C12 9.56914 11.9459 9.7 11.8494 9.79647C11.7528 9.89294 11.6219 9.94721 11.4856 9.94721C11.3491 9.94721 11.2183 9.89294 11.1217 9.79647C11.0252 9.7 10.971 9.56914 10.971 9.43267V1.75791L0.869497 11.8508C0.77398 11.9463 0.644425 12 0.509332 12C0.374252 12 0.244696 11.9463 0.149179 11.8508C0.0536616 11.7554 0 11.6258 0 11.4907C0 11.3556 0.0536616 11.2261 0.149179 11.1306L10.2421 1.02903H2.56737C2.43092 1.02903 2.30005 0.974819 2.20356 0.878326C2.10707 0.781834 2.05286 0.650973 2.05286 0.514515C2.05286 0.378056 2.10707 0.247196 2.20356 0.150703C2.30005 0.0542101 2.43092 1.21958e-05 2.56737 0H11.4856C11.6219 1.21958e-05 11.7528 0.0542101 11.8494 0.150703C11.9459 0.247196 12 0.378056 12 0.514515Z" fill="white"/>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div> 
+						</div><!--carousel -->
+					</div>	
+				</div>
+			</div>
+		</section>
+		<!-- start facilities section -->
+		
+		<!-- start services section -->
+		<section id="service" class="services_section section_padding">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="services_image">
+							<img src="img/service/services.png" alt="Shell">
+						</div>
+					</div>
+					
+					<div class="col-lg-6 col-md-12 col-sm-12">
+						<div class="sub_heading">
+							<span>Let's Go Together</span>
+						</div>
+						<h2 class="section_title">Exceptional Services</h2>
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-6">
+								<div class="service-card">
+									<div class="service_card_image">
+										<img src="img/service/service1.png" alt="">
+									</div>
+									<h4>Exclusive Trip</h4>
+									<p>There are many variations of passages of available.</p>
+								</div>
+							</div>	
+							
+							<div class="col-lg-6 col-md-6 col-sm-6">						
+								<div class="service-card">
+									<div class="service_card_image">
+										<img src="img/service/service2.png" alt="">
+									</div>
+									<h4>Safety First Always</h4>
+									<p>There are many variations of passages of available.</p>
+								</div>
+							</div>
+							
+							<div class="col-lg-6 col-md-6 col-sm-6">
+								<div class="service-card">
+									<div class="service_card_image">
+										<img src="img/service/service3.png" alt="">
+									</div>
+									<h4>Expert Guidance</h4>
+									<p>There are many variations of passages of available.</p>
+								</div>
+							</div>
+							
+							<div class="col-lg-6 col-md-6 col-sm-6">
+								<div class="service-card">
+									<div class="service_card_image">
+										<img src="img/service/service4.png" alt="">
+									</div>
+									<h4>24/7 Supported</h4>
+									<p>There are many variations of passages of available.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end services section -->
+		
+		<!-- start video section -->
+		<section id="video_section" class="video_section">
+			<div class="content">
+				<div class="sub_heading">
+					<span>Watch Our Story</span>
+				</div>
+				<h2 class="section_title video_section_title">Your Perfect Adventure Experience</h2>
+				<a href="#" id="play-video" class="play-button">
+					<div class="icon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="146" height="146" viewBox="0 0 146 146" fill="none">
+						  <ellipse cx="72.9983" cy="73" rx="72.7436" ry="73" fill="#BAB6B0" fill-opacity="0.17"/>
+						  <ellipse cx="72.9984" cy="73" rx="55.8033" ry="56" fill="#BAB6B0" fill-opacity="0.17"/>
+						  <ellipse cx="72.9983" cy="73" rx="41.8525" ry="42" fill="#FF9D43"/>
+						  <path d="M86.9494 72.4998L65.0266 88V57L86.9494 72.4998Z" fill="#E7E7E7" fill-opacity="0.67"/>
+						</svg>
+					</div>
+				</a>
+			</div>
+		</section>
+
+		<!-- Video Modal -->
+		<div id="videoModal" class="modal">
+			<div class="modal-content">
+				<div class="close">&times;</div>
+				<iframe
+				  id="youtube-video"
+				  width="560"
+				  height="315"
+				  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+				  style="border: none;"
+				  allow="autoplay; encrypted-media"
+				  allowfullscreen
+				></iframe>
+
+
+			</div>
+		</div>
+		<!-- end video section -->
+		
+		<!-- start team section -->
+		<section id="team" class="team_section section_padding">
+			<div class="container">
+				<div class="team_section_top">
+					<div class="sub_heading">
+						<span>Expert Team</span>
+					</div>
+					<h2 class="section_title team_section_title">Meet with Tour Guides</h2>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="team_card">
+							<img src="img/team/team1.jpg" alt="" class="team_image">
+							<div class="team_info">
+								<div class="team_details">
+									<h3>William Henry</h3>
+									<p>Tourist guide</p>
+								</div>
+								
+								<div class="team_svg">
+									<a href="#0">
+										<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+										  <path d="M11 18.5L21 23.5M21 8.5L11 13.5M26 31C23.2386 31 21 28.7614 21 26C21 23.2386 23.2386 21 26 21C28.7614 21 31 23.2386 31 26C31 28.7614 28.7614 31 26 31ZM6 21C3.23858 21 1 18.7614 1 16C1 13.2386 3.23858 11 6 11C8.76142 11 11 13.2386 11 16C11 18.7614 8.76142 21 6 21ZM26 11C23.2386 11 21 8.76142 21 6C21 3.23858 23.2386 1 26 1C28.7614 1 31 3.23858 31 6C31 8.76142 28.7614 11 26 11Z" stroke="#666666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+									<ul class="social_icon_list">
+										<li><a href="#0"><i class="fa-brands fa-x-twitter"></i></a></li>
+										<li><a href="#0"><i class="fa-brands fa-instagram"></i></a></li>
+										<li><a href="#0"><i class="fa-brands fa-whatsapp"></i></a></li>
+										<li><a href="#0"><i class="fa-brands fa-facebook-f"></i></a></li>
+									</ul>
+								</div>	
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-3 col-md-6">
+						<div class="team_card">
+							<img src="img/team/team2.jpg" alt="" class="team_image">
+							<div class="team_info">
+								<div class="team_details">
+									<h3>William Henry</h3>
+									<p>Tourist guide</p>
+								</div>
+								
+								<div class="team_svg">
+									<a href="#0">
+										<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+										  <path d="M11 18.5L21 23.5M21 8.5L11 13.5M26 31C23.2386 31 21 28.7614 21 26C21 23.2386 23.2386 21 26 21C28.7614 21 31 23.2386 31 26C31 28.7614 28.7614 31 26 31ZM6 21C3.23858 21 1 18.7614 1 16C1 13.2386 3.23858 11 6 11C8.76142 11 11 13.2386 11 16C11 18.7614 8.76142 21 6 21ZM26 11C23.2386 11 21 8.76142 21 6C21 3.23858 23.2386 1 26 1C28.7614 1 31 3.23858 31 6C31 8.76142 28.7614 11 26 11Z" stroke="#666666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+									<ul class="social_icon_list">
+										<li><a href="#0"><i class="fa-brands fa-x-twitter"></i></a></li>
+										<li><a href="#0"><i class="fa-brands fa-instagram"></i></a></li>
+										<li><a href="#0"><i class="fa-brands fa-whatsapp"></i></a></li>
+										<li><a href="#0"><i class="fa-brands fa-facebook-f"></i></a></li>
+									</ul>
+								</div>	
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-3 col-md-6">
+						<div class="team_card">
+							<img src="img/team/team3.jpg" alt="" class="team_image">
+							<div class="team_info">
+								<div class="team_details">
+									<h3>William Henry</h3>
+									<p>Tourist guide</p>
+								</div>
+								
+								<div class="team_svg">
+									<a href="#0">
+										<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+										  <path d="M11 18.5L21 23.5M21 8.5L11 13.5M26 31C23.2386 31 21 28.7614 21 26C21 23.2386 23.2386 21 26 21C28.7614 21 31 23.2386 31 26C31 28.7614 28.7614 31 26 31ZM6 21C3.23858 21 1 18.7614 1 16C1 13.2386 3.23858 11 6 11C8.76142 11 11 13.2386 11 16C11 18.7614 8.76142 21 6 21ZM26 11C23.2386 11 21 8.76142 21 6C21 3.23858 23.2386 1 26 1C28.7614 1 31 3.23858 31 6C31 8.76142 28.7614 11 26 11Z" stroke="#666666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+									<ul class="social_icon_list">
+										<li><a href="#0"><i class="fa-brands fa-x-twitter"></i></a></li>
+										<li><a href="#0"><i class="fa-brands fa-instagram"></i></a></li>
+										<li><a href="#0"><i class="fa-brands fa-whatsapp"></i></a></li>
+										<li><a href="#0"><i class="fa-brands fa-facebook-f"></i></a></li>
+									</ul>
+								</div>	
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-3 col-md-6">
+						<div class="team_card">
+							<img src="img/team/team2.jpg" alt="" class="team_image">
+							<div class="team_info">
+								<div class="team_details">
+									<h3>William Henry</h3>
+									<p>Tourist guide</p>
+								</div>
+								
+								<div class="team_svg">
+									<a href="#0">
+										<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+										  <path d="M11 18.5L21 23.5M21 8.5L11 13.5M26 31C23.2386 31 21 28.7614 21 26C21 23.2386 23.2386 21 26 21C28.7614 21 31 23.2386 31 26C31 28.7614 28.7614 31 26 31ZM6 21C3.23858 21 1 18.7614 1 16C1 13.2386 3.23858 11 6 11C8.76142 11 11 13.2386 11 16C11 18.7614 8.76142 21 6 21ZM26 11C23.2386 11 21 8.76142 21 6C21 3.23858 23.2386 1 26 1C28.7614 1 31 3.23858 31 6C31 8.76142 28.7614 11 26 11Z" stroke="#666666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+									<ul class="social_icon_list">
+										<li><a href="#0"><i class="fa-brands fa-x-twitter"></i></a></li>
+										<li><a href="#0"><i class="fa-brands fa-instagram"></i></a></li>
+										<li><a href="#0"><i class="fa-brands fa-whatsapp"></i></a></li>
+										<li><a href="#0"><i class="fa-brands fa-facebook-f"></i></a></li>
+									</ul>
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end team section -->
+		
+		<!-- start booking section -->
+		<section id="booking_section" class="booking_section section_padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-12">
+						<div class="booking_section_content">
+							<h2 class="section_title booking_section_title">Enjoy And Book The App All Over The World</h2>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+							
+							<div class="download_button">
+								<h3>Download Our App</h3>
+								<a href="#0">
+									<img src="img/download/applestore.svg" alt="">
+									<img src="img/download/playstore.svg" alt="">
+								</a>
+							</div>	
+						</div>
+					</div>
+					
+					<div class="col-lg-6 col-md-12">
+						<div class="booking_image">
+							<img src="img/booking1.png" alt="Travel App Image">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end booking section -->
+		
+		<!-- start news section -->
+		<section id="blog" class="news_section section_padding">
+			<div class="container">
+				<div class="news_heading_section">
+					<div class="sub_heading">
+						<span>Blogs & News</span>
+					</div>	
+					<h2 class="section_title news_section_title">Latest News & Articles</h2>
+				</div>
+				
+				<div class="row">	
+					<!-- Add similar course cards here -->
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="news_card">
+							<div class="news_image">
+								<img src="img/blog/news2.jpg" alt="">
+								<div class="time_date">
+									<span class="comment"><i class="fa-regular fa-comments"></i>0 Comment</span>
+									<span class="date"><i class="fa-regular fa-calendar"></i>September 10,2024</span>
+								</div>
+							</div>
+							<div class="course_info">
+								<a href="#"><h5>There are many of variations of passages </h5></a>
+								
+								<div class="rating">
+									<a href="#" class="btn news_btn">Read More
+										<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 12 12" fill="none">
+										  <path d="M12 0.514515V9.43267C12 9.56914 11.9459 9.7 11.8494 9.79647C11.7528 9.89294 11.6219 9.94721 11.4856 9.94721C11.3491 9.94721 11.2183 9.89294 11.1217 9.79647C11.0252 9.7 10.971 9.56914 10.971 9.43267V1.75791L0.869497 11.8508C0.77398 11.9463 0.644425 12 0.509332 12C0.374252 12 0.244696 11.9463 0.149179 11.8508C0.0536616 11.7554 0 11.6258 0 11.4907C0 11.3556 0.0536616 11.2261 0.149179 11.1306L10.2421 1.02903H2.56737C2.43092 1.02903 2.30005 0.974819 2.20356 0.878326C2.10707 0.781834 2.05286 0.650973 2.05286 0.514515C2.05286 0.378056 2.10707 0.247196 2.20356 0.150703C2.30005 0.0542101 2.43092 1.21958e-05 2.56737 0H11.4856C11.6219 1.21958e-05 11.7528 0.0542101 11.8494 0.150703C11.9459 0.247196 12 0.378056 12 0.514515Z" fill="white"/>
+										</svg>
+									</a>
+									
+									<div class="image_section">
+										<img class="creator_img" src="img/creator/creator1.svg" alt="">
+										<img class="creator_img" src="img/creator/creator2.svg" alt="">
+										<img class="creator_img" src="img/creator/creator2.svg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="news_card">
+							<div class="news_image">
+								<img src="img/blog/news3.jpg" alt="">
+								<div class="time_date">
+									<span class="comment"><i class="fa-regular fa-comments"></i>0 Comment</span>
+									<span class="date"><i class="fa-regular fa-calendar"></i>September 10,2024</span>
+								</div>
+							</div>
+							<div class="course_info">
+								<a href="#"><h5>There are many of variations of passages </h5></a>
+								
+								<div class="rating">
+									<a href="#" class="btn news_btn">Read More
+										<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 12 12" fill="none">
+										  <path d="M12 0.514515V9.43267C12 9.56914 11.9459 9.7 11.8494 9.79647C11.7528 9.89294 11.6219 9.94721 11.4856 9.94721C11.3491 9.94721 11.2183 9.89294 11.1217 9.79647C11.0252 9.7 10.971 9.56914 10.971 9.43267V1.75791L0.869497 11.8508C0.77398 11.9463 0.644425 12 0.509332 12C0.374252 12 0.244696 11.9463 0.149179 11.8508C0.0536616 11.7554 0 11.6258 0 11.4907C0 11.3556 0.0536616 11.2261 0.149179 11.1306L10.2421 1.02903H2.56737C2.43092 1.02903 2.30005 0.974819 2.20356 0.878326C2.10707 0.781834 2.05286 0.650973 2.05286 0.514515C2.05286 0.378056 2.10707 0.247196 2.20356 0.150703C2.30005 0.0542101 2.43092 1.21958e-05 2.56737 0H11.4856C11.6219 1.21958e-05 11.7528 0.0542101 11.8494 0.150703C11.9459 0.247196 12 0.378056 12 0.514515Z" fill="white"/>
+										</svg>
+									</a>
+									
+									<div class="image_section">
+										<img class="creator_img" src="img/creator/creator1.svg" alt="">
+										<img class="creator_img" src="img/creator/creator2.svg" alt="">
+										<img class="creator_img" src="img/creator/creator2.svg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="news_card">
+							<div class="news_image">
+								<img src="img/blog/news4.jpg" alt="">
+								<div class="time_date">
+									<span class="comment"><i class="fa-regular fa-comments"></i>0 Comment</span>
+									<span class="date"><i class="fa-regular fa-calendar"></i>September 10,2024</span>
+								</div>
+							</div>
+							<div class="course_info">
+								<a href="#"><h5>There are many of variations of passages </h5></a>
+								
+								<div class="rating">
+									<a href="#" class="btn news_btn">Read More
+										<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 12 12" fill="none">
+										  <path d="M12 0.514515V9.43267C12 9.56914 11.9459 9.7 11.8494 9.79647C11.7528 9.89294 11.6219 9.94721 11.4856 9.94721C11.3491 9.94721 11.2183 9.89294 11.1217 9.79647C11.0252 9.7 10.971 9.56914 10.971 9.43267V1.75791L0.869497 11.8508C0.77398 11.9463 0.644425 12 0.509332 12C0.374252 12 0.244696 11.9463 0.149179 11.8508C0.0536616 11.7554 0 11.6258 0 11.4907C0 11.3556 0.0536616 11.2261 0.149179 11.1306L10.2421 1.02903H2.56737C2.43092 1.02903 2.30005 0.974819 2.20356 0.878326C2.10707 0.781834 2.05286 0.650973 2.05286 0.514515C2.05286 0.378056 2.10707 0.247196 2.20356 0.150703C2.30005 0.0542101 2.43092 1.21958e-05 2.56737 0H11.4856C11.6219 1.21958e-05 11.7528 0.0542101 11.8494 0.150703C11.9459 0.247196 12 0.378056 12 0.514515Z" fill="white"/>
+										</svg>
+									</a>
+									
+									<div class="image_section">
+										<img class="creator_img" src="img/creator/creator1.svg" alt="">
+										<img class="creator_img" src="img/creator/creator2.svg" alt="">
+										<img class="creator_img" src="img/creator/creator2.svg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- card end -->
+				</div>	
+			</div>
+		</section>
+		<!-- end news section -->
+		
+		<!-- start contact section -->
+		<section id="contact" class="contact_section">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-6 col-md-12">
+						<div class="map_container">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3626.186604600241!2d89.42143507357302!3d24.65170445358243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fdb33497d1a03d%3A0x94330e661a0a022d!2sSaifi%20Plaza!5e0!3m2!1sen!2sbd!4v1739963633174!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+					</div>
+					
+					<!-- Contact Form -->
+					<div class="col-lg-6 col-md-12 bg_form">
+						<div class="contact-form">
+							<div class="sub_heading">
+								<span>Get Touch</span>
+							</div>
+							<h2 class="section_title contact_title">Send Message Anytime</h2>
+							<form id="contactForm">
+								<div class="form-group name_group">
+									<input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+									<input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+								</div>
+
+								<div class="form-group">
+									<select class="form-control" id="services">
+										<option>Service 1</option>
+										<option>Service 2</option>
+										<option>Service 3</option>
+									</select>
+								</div>
+
+								<div class="form-group mb_0">
+									<textarea class="form-control" id="message" rows="4" placeholder="Type your message here" required></textarea>
+								</div>
+								<button type="submit" class="btn form_btn">Submit Message
+									<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 12 12" fill="none">
+									  <path d="M12 0.514515V9.43267C12 9.56914 11.9459 9.7 11.8494 9.79647C11.7528 9.89294 11.6219 9.94721 11.4856 9.94721C11.3491 9.94721 11.2183 9.89294 11.1217 9.79647C11.0252 9.7 10.971 9.56914 10.971 9.43267V1.75791L0.869497 11.8508C0.77398 11.9463 0.644425 12 0.509332 12C0.374252 12 0.244696 11.9463 0.149179 11.8508C0.0536616 11.7554 0 11.6258 0 11.4907C0 11.3556 0.0536616 11.2261 0.149179 11.1306L10.2421 1.02903H2.56737C2.43092 1.02903 2.30005 0.974819 2.20356 0.878326C2.10707 0.781834 2.05286 0.650973 2.05286 0.514515C2.05286 0.378056 2.10707 0.247196 2.20356 0.150703C2.30005 0.0542101 2.43092 1.21958e-05 2.56737 0H11.4856C11.6219 1.21958e-05 11.7528 0.0542101 11.8494 0.150703C11.9459 0.247196 12 0.378056 12 0.514515Z" fill="white"/>
+									</svg>
+								</button>
+								<p id="responseMessage"></p>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Contact Section -->
+		
+		<!-- start footer section -->
+		<section id="footer_section" class="footer_section">
+			<footer class="footer">
+				<div class="container">
+					<div class="row section_padding">	
+						<div class="col-lg-3 col-md-6 col-sm-12 brand">
+							<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+								  <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0038 0C14.7883 0 14.5804 0.00769427 14.3649 0.0153885C6.37413 0.346243 0 6.92485 0 14.9962C0 17.6199 0.677444 20.0821 1.85527 22.2288C4.03387 25.2911 7.60585 25.722 10.5389 22.5904L13.7952 21.6748C13.8953 22.0749 14.1339 22.2749 14.3649 22.2749C14.5881 22.2749 14.8114 22.0903 14.9192 21.721C14.9423 21.7133 14.9731 21.6979 14.9961 21.6902L18.1909 22.5904C18.1909 22.5442 17.3595 25.9297 14.3649 27.6609C14.0339 27.8533 13.6721 28.0226 13.2871 28.1688C11.8091 28.7228 10.1617 28.8612 8.56043 28.5535C10.331 29.3922 12.2941 29.9 14.3572 29.9846C14.5727 29.9923 14.7806 30 14.9961 30C23.2794 30 30 23.2829 30 15.0038C30.0077 6.71711 23.2871 0 15.0038 0ZM15.7814 18.5124L18.1678 19.9974L18.1832 21.4747L14.9269 20.5591C14.8268 20.9592 14.5881 21.1593 14.3572 21.1593C14.1262 21.1593 13.8876 20.9592 13.7875 20.5591L10.5312 21.4747L10.5466 19.9974L12.933 18.5124C13.3949 18.1893 14.6497 11.6338 11.786 12.4263C9.43803 13.2342 7.09777 14.0421 4.74981 14.8423L5.2194 12.8264L12.7483 9.59477L14.3495 1.37728L16.3048 9.59477L23.4873 12.8264L23.9569 14.8423C21.6089 14.0344 19.2687 13.2265 16.9207 12.4263C14.0724 11.6338 15.3195 18.1893 15.7814 18.5124Z" fill="#FF9D43"/>
+								</svg>Travely
+							</a>
+							<p>An interior designer is someone who plans, researches, coordinates, and manages such .</p>
+							
+							<div class="social-icons">
+								<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+								<a href="#"><i class="fa-brands fa-instagram"></i></a>
+								<a href="#"><i class="fa-brands fa-x-twitter"></i></a>	
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-6 col-sm-12">
+							<div class="list_item">
+								<h3>About</h3>
+								<ul>
+									<li><a href="#">About Us<i class="fa-solid fa-arrow-right-long"></i></a></li>
+									<li><a href="#">Features<i class="fa-solid fa-arrow-right-long"></i></a></li>
+									<li><a href="#">News<i class="fa-solid fa-arrow-right-long"></i></a></li>
+									<li><a href="#">Careers<i class="fa-solid fa-arrow-right-long"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-6 col-sm-12 list_item">
+							<h3>Company</h3>
+							<ul>
+								<li><a href="#">Our Team<i class="fa-solid fa-arrow-right-long"></i></a></li>
+								<li><a href="#">Parther With Us<i class="fa-solid fa-arrow-right-long"></i></a></li>
+								<li><a href="#">FAQ<i class="fa-solid fa-arrow-right-long"></i></a></li>
+								<li><a href="#">Blog<i class="fa-solid fa-arrow-right-long"></i></a></li>
+							</ul>
+						</div>
+						<div class="col-lg-2 col-md-6 col-sm-12 list_item">
+							<h3>Support</h3>
+							<ul>
+								<li><a href="#">Account<i class="fa-solid fa-arrow-right-long"></i></a></li>
+								<li><a href="#">Support Center<i class="fa-solid fa-arrow-right-long"></i></a></li>
+								<li><a href="#">Feedback<i class="fa-solid fa-arrow-right-long"></i></a></li>
+								<li><a href="#">Accesbility<i class="fa-solid fa-arrow-right-long"></i></a></li>
+							</ul>
+						</div>
+						<div class="col-lg-2 col-md-6 col-sm-12 list_item">
+							<h3>Contact US</h3>
+							<ul>
+								<li><a href="#">4140 Parker<i class="fa-solid fa-arrow-right-long"></i></a></li>
+								<li><a href="#">New maxico 31134<i class="fa-solid fa-arrow-right-long"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="footer-bottom">
+						<a href="#"><p>© 2025 - Travely. Designed by <span>AB Themes</span>. All rights reserved</p></a>
+						<div class="Privacy_Terms">
+							<a href="#">Privacy</a>
+							<a href="#">Terms & Conditions</a>
+						</div>
+					</div>
+				</div>	
+			</footer>
+		</section>
+		<!-- end footer section -->
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.nice-select.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/bootstrap-datepicker.min.js"></script>
+		<script src="js/mixitup.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/contact.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

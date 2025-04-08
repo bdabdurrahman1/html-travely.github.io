@@ -1,0 +1,135 @@
+
+@media (max-width: 991px) {
+	.hero_left_section h1 {
+		font-size: 50px !important;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 70px !important;
+		margin-bottom: 40px;
+	}
+	.highlight:after {
+		content: "";
+		top: 0 !important;
+		left: -5px;
+		position: absolute;
+		transform: rotate(-1.6deg);
+		background: #FF9D43;
+		padding: 36px 150px;
+		z-index: -1;
+	}
+	.nav-links {
+		display: flex;
+		flex-direction: column;
+		background: #fff;
+		position: absolute;
+		top: 68px;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		overflow: hidden;
+		visibility: hidden;
+		opacity: 0;
+		transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+		transform: translateY(50px);
+		box-shadow: 0 15px 20px rgba(0,0,0, 0.2);
+	}
+    .nav-links.active {
+		
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .nav-links.closing {
+        transform: translateY(50px);
+        opacity: 0;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+    .menu-icon {
+        display: block !important;
+    }
+
+    .nav-links li {
+        padding-left: 0 !important;
+    }
+    .nav-links li a {
+        display: block;
+        line-height: 45px;
+        transition: background 0.4s, color 0.4s;
+        overflow: hidden;
+    }
+    .nav-links li a:hover {
+        color: var(--white);
+        background: var(--primary);
+    }
+	.nav_btn {
+		margin-top: 20px !important;
+	}
+	.nav_list .nav-item {
+		margin-bottom: 20px;
+		margin: 0;
+	}	
+	.section_title {
+        font-size: 30px !important;
+    }
+	.booking_image {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 22%;
+	}
+	.news_card {
+		margin-bottom: 30px;
+	}
+	.team_card {
+		margin-bottom: 30px;
+	}
+			
+	           
+}
+@media (min-width: 992px) {
+    .close-btn {
+        display: none; 
+    }
+}
+
+@media (max-width: 767px) {
+	.highlight:after {
+		content: "";
+		padding: 36px 120px !important;
+	}
+	
+	.icons {
+		display: table !important;
+		bottom: 50% !important;
+		margin-bottom: 25px;
+	}
+	.booking_image {
+		display: none;
+	}
+	.download_button h3 {
+		color: #fff;
+		margin-bottom: 30px !important;
+	}
+	.news_card {
+		margin-bottom: 30px;
+	}
+	.team_card {
+		margin-bottom: 30px;
+	}
+	.brand {
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 480px) {
+	.booking_image {
+		display: none;
+	}
+	.room_details .icons {
+		text-align: center;
+		display: flex !important;
+		gap: 20px;
+		position: absolute;
+		bottom: 35% !important;
+	}
+}
